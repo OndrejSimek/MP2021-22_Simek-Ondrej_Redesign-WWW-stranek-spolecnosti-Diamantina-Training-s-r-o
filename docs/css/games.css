@@ -1,0 +1,38 @@
+.course__text--hidden {
+    display: none;
+}
+.buttons {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.btn {
+    text-align: center;
+    width: 100px;
+    padding: 10px 0;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: var(--color-blue);
+    cursor: pointer;
+}
+.section__list__course {
+    margin-bottom: 10px;
+}
+.section__list__course {
+    min-width: 230px;
+    width: calc(100vw - 20px);
+    max-width: 300px;
+    min-height: 230px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section__list__course h3 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.section__list__course p {
+    margin-left: 10px;
+    padding-bottom: 20px;
+}

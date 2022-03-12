@@ -1,0 +1,66 @@
+.courses__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.courses__list__course {
+    min-width: 230px;
+    width: calc(100vw - 20px);
+    max-width: 300px;
+    min-height: 300px;
+    height: calc(100vw - 20px);
+    max-height: 330px;
+    color: white;
+    background-image: url(../images/training/komunikacni_dovednosti.jpg);
+}
+
+.courses__list__course h3 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.courses__list__course p {
+    margin-left: 10px;
+}
+
+.courses__list__course {
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 590px) {
+    .courses__list__course {
+        min-width: 230px;
+        width: calc(50% - 5px);
+        max-width: 330px;
+        min-height: 300px;
+        height: calc(100vw - 20px);
+        margin-bottom: 30px;
+    }
+
+    .courses__list__course ul {
+        margin-bottom: 20px;
+    }
+
+    .courses__list {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 690px) {
+    .courses__list {
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .courses__list__course {
+        min-width: 230px;
+        width: calc(33.33333333% - 5px);
+        max-width: 400px;
+        min-height: 300px;
+        height: calc(100vw - 20px);
+    }
+}

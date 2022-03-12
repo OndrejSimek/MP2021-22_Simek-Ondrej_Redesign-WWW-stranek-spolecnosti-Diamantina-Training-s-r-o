@@ -1,0 +1,130 @@
+.course_offer__list__type {
+    margin-bottom: 20px;
+}
+
+.courses__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.courses__list__course {
+    min-width: 230px;
+    width: calc(100vw - 20px);
+    max-width: 300px;
+    min-height: 300px;
+    height: calc(100vw - 20px);
+    max-height: 330px;
+    color: white;
+    background-image: url(../images/training/komunikacni_dovednosti.jpg);
+}
+
+.courses__list__course h3 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.courses__list__course p {
+    margin-left: 10px;
+}
+
+.courses__list {
+    margin: 0 auto;
+}
+
+.courses__list__course {
+    margin-bottom: 10px;
+}
+
+.about_us__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.about_us__gallery__figure {
+    width: 150px;
+}
+
+.advert {
+    background-color: var(--color-blue);
+    line-height: 30px;
+    padding: 10px 0;
+}
+
+.advert__text {
+    margin: 10px;
+}
+
+.advert__text__p {
+    color: white;
+    font-size: 25px;
+}
+
+.advert a {
+    height: 30px;
+}
+
+.advert__text__p--small {
+    font-size: 16px;
+}
+
+.adver__size {
+    width: auto;
+}
+
+.footer__ul {
+    padding: 0;
+}
+
+.footer__ul li {
+    display: block;
+}
+@media only screen and (min-width: 540px) {
+    .about_us__gallery__figure {
+        width: 160px;
+    }
+}
+@media only screen and (min-width: 590px) {
+    .advert__size {
+        display: flex;
+    }
+    .advert a {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 690px) {
+    .courses__list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .courses__list__course {
+        width: 49%;
+    }
+
+    .course_offer__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+
+    .course_offer__list__type {
+        width: 45%;
+        flex-shrink: 0;
+    }
+}
+@media only screen and (min-width: 720px) {
+    .about_us__gallery__figure {
+        width: 190px;
+    }
+}
+@media only screen and (min-width: 760px) {
+    .about_us__gallery__figure {
+        width: 152px;
+    }
+}

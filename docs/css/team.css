@@ -1,0 +1,35 @@
+.lecturers_list__lecturer {
+    margin-bottom: 20px;
+}
+.lecturers_list__lecturer__figure {
+    max-width: 200px;
+    margin: 0 auto;
+}
+.lecturers_list__lecturer__p {
+    margin-bottom: 10px;
+}
+.description .a--blue {
+    display: inline;
+}
+@media only screen and (min-width: 590px) {
+    .lecturers_list__lecturer {
+        display: flex;
+    }
+    .lecturers_list__lecturer__figure {
+        flex-shrink: 0;
+        margin-left: 20px;
+    }
+    .lecturers_list__lecturer {
+        margin-bottom: 20px;
+    }
+    .lecturers_list__lecturer:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+    .lecturers_list__lecturer--margin .lecturers_list__lecturer__figure { 
+        margin: 0;
+        margin-right: 20px;
+    }
+    .lecturers_list__lecturer__p {
+        margin: 0;
+    }
+}

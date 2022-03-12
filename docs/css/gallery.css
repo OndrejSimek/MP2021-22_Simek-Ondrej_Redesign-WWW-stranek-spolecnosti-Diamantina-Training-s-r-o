@@ -1,0 +1,25 @@
+.lightgallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.lightgallery a {
+    width: 49%;
+    flex-shrink: 0;
+}
+section {
+    margin-bottom: 30px;
+}
+@media only screen and (min-width: 690px) {
+.lightgallery a {
+    width: 33%;
+    max-width: 320px;
+    flex-shrink: 0;
+}
+}
+@media only screen and (min-width: 960px) {
+    .lightgallery a {
+        width: 24%;
+        flex-shrink: 0;
+    }
+    }
