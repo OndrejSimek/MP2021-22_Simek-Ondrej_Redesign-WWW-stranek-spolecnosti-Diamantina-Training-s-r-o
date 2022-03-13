@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,13 @@
     <link rel="stylesheet" href="./css/contact.css">
     <title>Kontaktní formulář</title>
 </head>
+
 <body>
     <header>
         <div class="header__top_part">
-            <a href="./index.html"><figure class="header__top_part__figure"><img src="./images/logo.png" alt="Diamantina logo"></figure></a>
+            <a href="./index.html">
+                <figure class="header__top_part__figure"><img src="./images/logo.png" alt="Diamantina logo"></figure>
+            </a>
             <nav class="header__top_part__nav">
                 <ul class="header__top_part__nav__ul">
                     <li><a href="#course_offer">Nabídka kurzů</a></li>
@@ -46,7 +50,7 @@
                 </div>
                 <div class="info__details">
                     <p class="info__details__p info__details__p--blue">E-mail</p>
-                    <p class="info__details__p"><a href="mailto:info@diamantina.cz">info@diamantina.cz</a>  </p>
+                    <p class="info__details__p"><a href="mailto:info@diamantina.cz">info@diamantina.cz</a> </p>
                 </div>
                 <div class="info__details info__details--position">
                     <p class="info__details__p info__details__p--blue">Adresa sídla</p>
@@ -57,7 +61,7 @@
         <section class="form">
             <h2>Nezávazná poptávka</h2>
             <p>Zaujaly nás vaše služby? Nezávazně nás poptejte a my vás budeme kontaktovat.</p>
-            <form >
+            <form>
                 <label for="společnost">Společnost</label>
                 <input type="text" id="společnost" name="společnost" placeholder="Společnost">
                 <label for="kontaktní_osoba">Kontaktní osoba</label>
@@ -69,11 +73,19 @@
                 <p>Rád bych poptal</p>
                 <label for="kurz"></label>
                 <input type="text" name="kurz" id="kurz" placeholder="kurz">
-                <label for=""></label>
+                <label for="typ_kurzu"></label>
                 <input type="text" name="typ_kurzu" id="typ_kurzu" placeholder="typ kurzu">
                 <label for="specifikace"></label>
-                <textarea type="text" name="specifikace" id="specifikace" placeholder="Chci více specifikovat svou poptávku…"></textarea>
+                <textarea name="specifikace" id="specifikace"
+                    placeholder="Chci více specifikovat svou poptávku…"></textarea>
             </form>
+            <div class="checkbox">
+                <label for="checkbox">checkbox</label>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <p>Souhlasím se zpracováním osobních údajů.</p>
+            </div>
+            <button class="btn--blue btn">Odeslat</button>
+
         </section>
     </main>
     <footer class="footer">
@@ -89,4 +101,5 @@
         </figure>
     </footer>
 </body>
+
 </html>
