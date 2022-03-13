@@ -13,7 +13,9 @@
 <body>
     <header>
         <div class="header__top_part">
-            <a href="./index.html"><figure class="header__top_part__figure"><img src="./images/logo.png" alt="Diamantina logo"></figure></a>
+            <a href="./index.html">
+                <figure class="header__top_part__figure"><img src="./images/logo.png" alt="Diamantina logo"></figure>
+            </a>
             <nav class="header__top_part__nav">
                 <ul class="header__top_part__nav__ul">
                     <li><a href="./index.html#course_offer">Nabídka kurzů</a></li>
@@ -31,7 +33,7 @@
         </div>
     </header>
     <main>
-        <section class="">
+        <section class="legend">
             <h2>Legenda</h2>
             <p>Vždy jednou za rok se v nejmenovaném království koná dobrodružný závod. Jezdci na koních mají za úkol ve
                 stanoveném čase nasbírat co nejvíce bodů za projetí co největšího počtu vesnic, měst a hradů.Vaším
@@ -110,59 +112,70 @@
             </div>
         </section>
         <section class="additioanl_info">
-            <div class="additioanl_info__rules">
-                <h3>Systém a pravidla hry</h3>
-                <a class="additioanl_info__rules__a" href="./stepsandshadows/_SaSpravidlaOBECNA.pdf">Pravidla hry ke
-                    staření</a>
-                <a class="additioanl_info__rules__a" href="./stepsandshadows/Stopyastiny_RALLYE_pravidla.pdf">Herní
-                    systém ke stažení</a>
+            <h2>Dodatečné info</h2>
+            <div class="additioanl_info__flex">
+                <div class="additioanl_info_rules additioanl_info__div">
+                    <h3>Systém a pravidla hry</h3>
+                    <a class="additioanl_info__rules__a" href="./stepsandshadows/_SaSpravidlaOBECNA.pdf">Pravidla hry ke
+                        staření</a>
+                    <a class="additioanl_info__rules__a" href="./stepsandshadows/Stopyastiny_RALLYE_pravidla.pdf">Herní
+                        systém ke stažení</a>
+                </div>
+                <div class="additioanl_info__contact additioanl_info__div">
+                    <h3>Kontakt</h3>
+                    <p><b>Koordinátor závodu:</b> Olajda Prokešová</p>
+                    <p>
+                        <b>Telefon:</b> <a class="additioanl_info__contact__a" href="tel:732377537">732 377 537</a></p>
+                    <p>
+                        <b>Email:</b> <a class="additioanl_info__contact__a"
+                            href="mailto:olajda.prokesova@diamantina.cz">olajda.prokesova@diamantina.cz</a>
+                    </p>
+                </div>
             </div>
-            <div>
+            <div class="additioanl_info__equipment additioanl_info__div">
                 <h3>Vybavení</h3>
                 <p>Konkrétní potřeby budou zveřejněné spolu s informacemi o následující hře.
                     Očekávat ale můžete něco ve stylu:</p>
-                <p><b>VYBAVENÍ NA TÝM:</b></p>
-                <ul>
-                    <li>psací potřeby</li>
-                    <li>a blok</li>
-                </ul>
-                <p><b>VYBAVENÍ JEDNOTLIVCE:</b>
-                </p>
-                <ul>
-                    <li>sportovní oblečení</li>
-                    <li>pohodlné boty</li>
-                    <li>čelová svítilna či baterka</li>
-                </ul>
+                <div class="additioanl_info__div__flex">
+                    <div>
+                        <p><b>VYBAVENÍ NA TÝM:</b></p>
+                        <ul>
+                            <li>psací potřeby</li>
+                            <li>blok</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p><b>VYBAVENÍ JEDNOTLIVCE:</b></p>
+                        <ul>
+                            <li>sportovní oblečení</li>
+                            <li>pohodlné boty</li>
+                            <li>čelová svítilna či baterka</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="additioanl_info__contact">
-                <h3>Kontakt</h3>
-                <p><b>Koordinátor závodu:</b> Olajda Prokešová</p>
-                <p>
-                    <b>Telefon:</b> <a class="additioanl_info__contact__a" href="tel:732377537">732 377 537</a></p>
-                <p>
-                    <b>Email:</b> <a class="additioanl_info__contact__a"
-                        href="mailto:olajda.prokesova@diamantina.cz">olajda.prokesova@diamantina.cz</a>
-                </p>
-            </div>
+
         </section>
         <section>
             <h2>Minulá kola</h2>
             <ul>
-                <li><a href="">Stopy a stíny 10/2019</a></li>
-                <li><a href="">Stopy a stíny 02/2019</a></li>
-                <li><a href="">Stopy a stíny 04/2018</a></li>
-                <li><a href="">Stopy a stíny 09/2017</a></li>
-                <li><a href="">Stopy a stíny 04/2017</a></li>
-                <li><a href="">Stopy a stíny 10/2016</a></li>
-                <li><a href="">Stopy a stíny 04/2016</a></li>
-                <li><a href="">Stopy a stíny 10/2015</a></li>
-                <li><a href="">Stopy a stíny 3/2015</a></li>
-                <li><a href="">Stopy a stíny 10/2014</a></li>
-                <li><a href="">Stopy a stíny 4/2014</a></li>
+                <li><a class="a--blue" href="./stepsandshadows_10_2019.html">Stopy a stíny 10/2019</a></li>
+                <li><a class="a--blue" href="./stepsandshadows_02_2019.html">Stopy a stíny 02/2019</a></li>
             </ul>
         </section>
     </main>
-
+    <footer class="footer">
+        <ul class="footer__ul">
+            <li><a href="./index.html#course_offer">Nabídka služeb</a></li>
+            <li><a href="./team.html">O nás</a></li>
+            <li><a href="./news.html">Novinky</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a href="./contact.html" class="a--blue">Nezávazná poptávka</a></li>
+        </ul>
+        <figure class="footer__logo">
+            <img src="./images/logo_edit.png" alt="Diamantina logo">
+        </figure>
+    </footer>
 </body>
 
 </html>

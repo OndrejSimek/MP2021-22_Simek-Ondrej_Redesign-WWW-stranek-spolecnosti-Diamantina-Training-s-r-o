@@ -4,7 +4,8 @@
     --color-blue: #0098db;
 }
 
-html {
+html,
+textarea {
     font-family: 'Titillium Web', sans-serif;
     scroll-behavior: smooth;
 }
@@ -84,14 +85,17 @@ section {
 header {
     margin-bottom: 30px;
 }
-header .btn--blue{
+
+header .btn--blue {
     margin: 0;
     width: 180px;
 }
+
 .header__top_part {
     display: flex;
     justify-content: space-between;
 }
+
 .header__top_part__figure {
     margin: 15px 20px;
     width: 260px;
@@ -117,6 +121,7 @@ h1 {
     padding-bottom: 20px;
     background-image: url(../images/header_background_edit.jpg);
     height: fit-content;
+    min-height: 250px;
     color: white;
     background-size: cover;
     padding-bottom: 50px;
@@ -146,6 +151,17 @@ h1 {
     font-weight: 500;
 }
 
+.footer {
+    display: flex;
+    border-top: var(--color-blue) 3px solid;
+}
+
+.footer__logo {
+    width: 150px;
+    margin: auto;
+    margin-right: 0;
+}
+
 .footer__ul {
     padding: 0;
 }
@@ -163,22 +179,60 @@ h1 {
     text-decoration: underline;
     text-decoration-color: var(--color-blue);
 }
+
 .description {
     font-size: 20px;
     margin-bottom: 20px;
 }
+
+/* This element defines the size the iframe will take.
+   In this example we want to have a ratio of 25:14 */
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* The height of the item will now be 56.25% of the width. */
+    margin-bottom: 30px;
+}
+
+/* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 0px;
+}
+
 @media only screen and (min-width: 590px) {
 
     main,
     footer,
     .header__top_part,
-    .header__bottom_part__content, .advert__size {
+    .header__bottom_part__content,
+    .advert__size {
         margin: auto 50px;
     }
 
 
     h1 {
         font-size: 40px;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .footer__ul {
+        display: flex;
+        margin: 15px 0;
+        justify-content: space-evenly;
+    }
+
+    .footer__logo {
+        margin: 15px auto;
     }
 }
 
@@ -189,9 +243,11 @@ h1 {
     main,
     footer,
     .header__top_part,
-    .header__bottom_part__content, .advert__size {
+    .header__bottom_part__content,
+    .advert__size {
         margin: auto 100px;
     }
+
     .header__top_part__nav {
         display: block;
         line-height: 50.25px;
@@ -208,8 +264,35 @@ h1 {
     .header__top_part__nav__ul li {
         display: block;
     }
+
     h1 {
         font-size: 60px;
+    }
+
+    .aspect-ratio {
+        max-width: 760px;
+        height: 428px;
+        max-height: 428px;
+        padding-bottom: 0;
+        /* The height of the item will now be 56.25% of the width. */
+        margin-bottom: 30px;
+        margin: 0 auto;
+    }
+
+    .footer {
+        display: flex;
+        margin-top: -3px;
+    }
+
+    .footer__logo {
+        margin: auto;
+        margin-right: 0;
+    }
+
+    .footer__ul {
+        width: 100%;
+        max-width: 800px;
+        justify-content: space-between;
     }
 }
 
@@ -218,15 +301,18 @@ h1 {
     main,
     footer,
     .header__top_part,
-    .header__bottom_part__content, .advert__size {
+    .header__bottom_part__content,
+    .advert__size {
         width: 1240px;
         margin: auto;
         margin-bottom: auto;
         margin-left: auto;
     }
+
     main {
         margin: auto;
     }
+
     .header__bottom_part__content {
         margin-left: calc((100vw - 800px) - ((100vw - 400px) / 2));
     }

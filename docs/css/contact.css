@@ -1,0 +1,76 @@
+
+.info__details {
+    margin-bottom: 30px;
+}
+
+.info__details__p {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.info__details__p--blue {
+    color: var(--color-blue);
+}
+
+label {
+    display: none;
+}
+
+textarea {
+    max-width: 1015px;
+    resize: none;
+}
+input,
+textarea {
+    width: calc(100% - 10px);
+    height: 50px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+input {
+    width: calc(100vw - 30px);
+}
+input,
+textarea,
+input::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+#specifikace {
+    height: 200px;
+    line-height: 1;
+}
+@media only screen and (min-width: 590px) {
+    .info__flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .info__details {
+        width: 45%;
+    }
+    input {
+        width: calc(100vw / 2 - 60px);
+        margin: 20px 0;
+        max-width: 500px;
+    }
+    #společnost, #telefon, #kurz {
+        margin-right: 8px;
+    }
+    textarea {
+        width: calc(100vw - 100px);
+    }
+}
+@media only screen and (min-width: 960px)  {
+    .info__details {
+        width: 30%;
+    }
+    input {
+        width: calc(100vw - (100vw / 2) - 110px);
+    }
+        textarea {
+        width: 100%;
+    }
+}
