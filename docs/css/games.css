@@ -1,38 +1,109 @@
 .course__text--hidden {
     display: none;
 }
+
 .buttons {
     display: flex;
     padding-top: 40px;
     padding-bottom: 20px;
 }
+
 .btn {
     text-align: center;
     width: 100px;
-    padding: 10px 0;
     margin: 0 auto;
     margin-top: 15px;
     background-color: var(--color-blue);
     cursor: pointer;
 }
+
 .section__list__course {
     margin-bottom: 10px;
 }
+
 .section__list__course {
     min-width: 230px;
     width: calc(100vw - 20px);
-    max-width: 300px;
+    max-width: 400px;
     min-height: 230px;
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 20px auto;
 }
+
 .section__list__course h3 {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 5px;
 }
+
 .section__list__course p {
     margin-left: 10px;
     padding-bottom: 20px;
+    width: 280px;
+}
+.section__stopy .btn {
+    width: 200px;
+}
+.course__text > p {
+    width: 95%;
+    margin: 10px 5px;
+  }
+/* The Modal (background) */
+.modal {
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) {
+    .section__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .section__list__course {
+        width: 45%;
+    }
 }

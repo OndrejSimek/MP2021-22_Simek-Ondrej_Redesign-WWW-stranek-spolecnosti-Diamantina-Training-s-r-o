@@ -5,22 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Diamantina training firemní akce teambulding trénink týmové akce">
+    <meta name="description"
+        content="Pořádáme firemní akce na míru, od modulového vzdělávání a tréninků, přes programy zaměřené na rozvoj týmů až po zábavné programy v podobě doprovodných akcí, ...">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/games.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-43580300-2', 'auto');
+        ga('send', 'pageview');
+    </script>
     <title>Zábava</title>
 </head>
 
 <body>
     <header>
         <div class="header__top_part">
-            <a href="./index.html"><figure class="header__top_part__figure"><img src="./images/logo.png" alt="Diamantina logo"></figure></a>
-            <nav class="header__top_part__nav">
+            <a href="./index.html">
+                <figure class="header__top_part__figure"><img src="./images/logo.png" alt="Diamantina logo"></figure>
+            </a>
+            <div class="header__top_part__hamburger_menu" onclick="menuOnOff()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="18" viewBox="0 0 27 18">
+                    <path id="Icon_material-menu" fill="black" data-name="Icon material-menu" d="M4.5,27h27V24H4.5Zm0-7.5h27v-3H4.5ZM4.5,9v3h27V9Z" transform="translate(-4.5 -9)"></path>
+                </svg></div>
+            <nav class="header__top_part__nav header__nav--hidden" id="header__top_part__nav">
                 <ul class="header__top_part__nav__ul">
-                    <li><a href="./index.html#course_offer">Nabídka kurzů</a></li>
+                    <li><a href="#course_offer">Nabídka kurzů</a></li>
                     <li><a href="./team.html">O nás</a></li>
                     <li><a href="./news.html">Novinky</a></li>
                     <li><a href="./contact.html">Kontakt</a></li>
-                    <li><a href="./contact.html" class="btn--blue">Nezávazně poptat</a></li>
+                    <li><a href="./contact.html" class="btn btn--blue">Nezávazně poptat</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,17 +73,14 @@
                 upravíme podle vašich požadavků. Pokud máte zájem o motivovaný program, který jste v naší nabídce
                 neobjevili, neváhejte se nám ozvat. Společně vytvoříme program, který naplní vaše očekávání. </p>
             <div class="section__list">
-                <div class="section__list__course"
-                    style="background-image: url(./images/training/komunikacni_dovednosti.jpg);">
+                <div class="section__list__course" style="background-image: url(./images/games/Dannyho_partaci.jpg);">
                     <h3>Dannyho parťáci</h3>
                     <p>Už jste někdy doopravdy ukradli dvěstěkarátový diamant?</p>
-                    <div id="course__text0" class="course__text--hidden">
-                        <p>Všichni jistě znáte slavný závod vedoucí z Evropy do Afriky. Fandíte, představujete si, jaké
-                            to asi je uprostřed pouště v terénním autě. Málokdo z vás ale ví, že na pozadí probíhá také
-                            závod konstruktérů, mechaniků, doktorů a jiných členů podpůrných týmů, které zabezpečují
-                            možnost pokračování jezdce i v další etapě. Tito lidé sice nejsou vidět na stupních vítězů,
-                            a přesto svádějí mnohdy těžší souboj než závodníci na trati. A pokud nezvítězí oni,
-                            neuvidíte na stupních vítězů ani jejich závodníka… </p>
+                    <div id="course__text0" class="course__text--hidden course__text">
+                        <p>„Nic vás tak společně nesblíží jako pocit, že jste provedli něco nekalého. Těch pár milionů
+                            dolarů už je jenom bonus.“ Danny Ocean má pro svou partu další práci. Jedná se o obří
+                            diamant z Ruska, který je na jeden den uložen v dokonale střežené místnosti v budově na
+                            území České Republiky. A Danny tehle diamant plánuje získat… </p>
                         <p>Program, ve kterém se účastníci mění v konstruktéry a designéry speciálních vozítek, aby se
                             následně mohli stát pohonem, motory a brzdami a samozřejmě závodníky. V úvodu programu se
                             účastníci rozdělí do skupinek a mají za úkol navrhnout a sestrojit funkční vozidlo, které
@@ -61,23 +89,20 @@
                             následovat samotný závod, který prověří nejen kvalitu vozu, ale také schopnosti a dovednosti
                             celé posádky v rámci rychlostních zkoušek (sprint, terénní zkouška, štafeta, slalom atd.).
                         </p>
-                        <p>Program je vhodný zejména pro smíšené kolektivy, kde se převážně muži věnují stavbě strojů a
-                            ženy mají na starosti tvorbu názvu týmu, výrobu závodního dresu a formát představení týmu.
-                            Program standardně trvá od 7 do 12 hodin včetně závodu, je možné jej rozdělit do dvou dnů
-                            (jeden den odpoledne stavba závodních strojů, druhý den dopoledne samotný závod). Program
-                            realizujeme pro skupiny od 20 do 50 účastníků.
+                        <p> Každý z účastníků bude mít svou nezastupitelnou roli, na každém bude záviset úspěch celé
+                            mise. Program standardně trvá od 6 do 8 hodin a realizujeme jej pro skupiny do 40 účastníků.
+                            Program dokážeme připravit téměř na jakémkoli místě, výhodou jsou větší města.
                         </p>
                     </div>
                     <div class="buttons">
                         <div onclick="displayText(0)" class="btn">Podrobnosti</div>
-                        <a class="btn" href="./commision.html">Objednat</a>
+                        <a class="btn" href="./contact.html">Objednat</a>
                     </div>
                 </div>
-                <div class="section__list__course"
-                    style="background-image: url(./images/training/komunikacni_dovednosti.jpg);">
+                <div class="section__list__course" style="background-image: url(./images/games/rallye.jpg);">
                     <h3>Rallye Paříž - Dakar</h3>
                     <p>Postavte si svůj závodní stroj a zažijte spanilou jízdu </p>
-                    <div id="course__text1" class="course__text--hidden">
+                    <div id="course__text1" class="course__text--hidden course__text">
                         <p>Všichni jistě znáte slavný závod vedoucí z Evropy do Afriky. Fandíte, představujete si, jaké
                             to asi je uprostřed pouště v terénním autě. Málokdo z vás ale ví, že na pozadí probíhá také
                             závod konstruktérů, mechaniků, doktorů a jiných členů podpůrných týmů, které zabezpečují
@@ -107,14 +132,13 @@
                     </div>
                     <div class="buttons">
                         <div onclick="displayText(1)" class="btn">Podrobnosti</div>
-                        <a class="btn" href="./commision.html">Objednat</a>
+                        <a class="btn" href="./contact.html">Objednat</a>
                     </div>
                 </div>
-                <div class="section__list__course"
-                    style="background-image: url(./images/training/komunikacni_dovednosti.jpg);">
+                <div class="section__list__course" style="background-image: url(./images/games/detective.jpg);">
                     <h3>Sherlock Holmes</h3>
                     <p> Staňte se detektivy a vyřešte komplikovanou záhadu</p>
-                    <div id="course__text2" class="course__text--hidden">
+                    <div id="course__text2" class="course__text--hidden course__text">
                         <p>Čtyři podezřelí a pouze jeden pachatel. Informace, které je potřeba roztřídit na pravdivé a
                             lživé. Zdánlivě spolupracující zaměstnanci nejmenovaného hotelu se možná jen pokoušejí
                             zakrýt čin, který někdo z nich spáchal. Samotný Sherlock Holmes na případ nestačí a povolává
@@ -135,19 +159,26 @@
                     </div>
                     <div class="buttons">
                         <div onclick="displayText(2)" class="btn">Podrobnosti</div>
-                        <a class="btn" href="./commision.html">Objednat</a>
+                        <a class="btn" href="./contact.html">Objednat</a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section_vecirek">
             <h2>Večírek</h2>
-            <p>Konečně jste to našli. Mezi vším tím pohybem, adrenalinem a týmovou spoluprací je večírek právě tou akcí pro pohodu, klid a nezávazné popíjení. I z večírku se dá ovšem udělat něco víc. Večírky, které nabízíme, jsou programovými bloky, které nabízí oživení firemních setkání. Většinou se jedná o bloky aktivit, propojených jednoduchou legendou nebo motivem. Ještě více než u jiného typu akcí zde platí, že záleží na každém jednotlivci, jak večer stráví. Zda bude aktivním účastníkem nebo jen spokojeným pozorovatelem.</p>
-            <p>Udělejte si představu, jak může váš večírek vypadat a přečtěte si něco víc o připravených programech: </p>
-                <div class="section__list__course" style="background-image: url(./images/training/komunikacni_dovednosti.jpg);">
+            <p>Konečně jste to našli. Mezi vším tím pohybem, adrenalinem a týmovou spoluprací je večírek právě tou akcí
+                pro pohodu, klid a nezávazné popíjení. I z večírku se dá ovšem udělat něco víc. Večírky, které nabízíme,
+                jsou programovými bloky, které nabízí oživení firemních setkání. Většinou se jedná o bloky aktivit,
+                propojených jednoduchou legendou nebo motivem. Ještě více než u jiného typu akcí zde platí, že záleží na
+                každém jednotlivci, jak večer stráví. Zda bude aktivním účastníkem nebo jen spokojeným pozorovatelem.
+            </p>
+            <p>Udělejte si představu, jak může váš večírek vypadat a přečtěte si něco víc o připravených programech:
+            </p>
+            <div class="section__list">
+                <div class="section__list__course" style="background-image: url(./images/games/prague_night.jpg);">
                     <h3>Pražská mystéria</h3>
                     <p>Netradiční poznání tajemných zákoutí Prahy</p>
-                    <div id="course__text3" class="course__text--hidden">
+                    <div id="course__text3" class="course__text--hidden course__text">
                         <p>Sto věží, tisíc ulic, milión malých tajemství, jedna řeka … Praha. Město, kde se dá každý den
                             stokrát zamilovat. Ulice, náplavka, kostely, parky. Dlaždice ošoupané historií i podloubí
                             tepající životem. Místa, ze kterých lze díky jejich geniu loci, namalovat jenom zlomek,
@@ -164,34 +195,279 @@
                     </div>
                     <div class="buttons">
                         <div onclick="displayText(3)" class="btn">Podrobnosti</div>
-                        <a class="btn" href="./commision.html">Objednat</a>
+                        <a class="btn" href="./contact.html">Objednat</a>
                     </div>
                 </div>
-        
-                <div class="section__list__course" style="background-image: url(./images/training/komunikacni_dovednosti.jpg);">
+
+                <div class="section__list__course" style="background-image: url(./images/games/buffet.jpg);">
                     <h3>Pochoutky tisíce a jedné noci</h3>
                     <p>Naučte se vychutnávat si život </p>
-                    <div id="course__text3" class="course__text--hidden">
-                        <p>Sto věží, tisíc ulic, milión malých tajemství, jedna řeka … Praha. Město, kde se dá každý den
-                            stokrát zamilovat. Ulice, náplavka, kostely, parky. Dlaždice ošoupané historií i podloubí
-                            tepající životem. Místa, ze kterých lze díky jejich geniu loci, namalovat jenom zlomek,
-                            odraz na střípku skutečné krásy. Nabízíme vstupenku do koutů schovaných před očima běžných
-                            návštěvníků. Nabízíme staré uličky v novém světle. Z nadhledu věží a třebas i podhledu
-                            podzemí. Zveme vás k poznání mystérií schovaných pod křídly soch andělů a ztracených v
-                            proudu času. </p>
-                        <p>Pražská mystéria jsou program, který využívá nádherné kulisy hlavního města. Je zároveň
-                            zábavou a stejně tak i průvodcem po tajemných uličkách a více či méně známých zákoutích.
+                    <div id="course__text4" class="course__text--hidden course__text">
+                        <p>Možná, že Praha není vyhlášená kulinářská destinace jako třeba Řecko, možná, že český národ
+                            nedal
+                            světu tolik pochutin jako třeba Itálie, možná nejsme do jídla zamilováni jako je tomu u
+                            Francouzů, ale díky pozici ve středu Evropy můžeme směle prohlásit, že se stáváme ve věcech
+                            stravování národem značně kosmopolitním. Jak často si vyzkoušíte jídlo vychutnávat a nejenom
+                            ho
+                            jíst? Jak často vám uspěchaný svět dovolí přivonět k dobré kvalitní kávě? Zkusili jste
+                            požitek
+                            obvyklý u řady národů – jíst rukama a jídlo tak vychutnat i tímto způsobem? Znáte vůně Prahy
+                            (ty
+                            příjemné) a znáte Prahu třeba po hmatu? Slyšeli jste někdy koncert ruchu Starého Města?
+                            Pokud
+                            jen ve skrytu duše přiznáváte, že ne, tak je ten pravý čas vnímat jeden celý den nebo
+                            alespoň
+                            večer svět všemi smysly. </p>
+                        <p> Pochoutky tisíce a jedné noci jsou programem představujícím výjimečné pochutiny různorodým
+                            způsobem. Navrací účastníky zpět do přítomnosti a ukazuje, jak lze vnímat chuti a vůně, když
+                            na
+                            to máme dostatek času.
                         </p>
-                        <p>Program nabízíme jako celodenní městskou hru, jako součást firemního večírku a kratší verzi
-                            také jako doprovodný program vašeho konferenčního nebo školícího setkání.</p>
-                        <p>Doporučený počet účastníků: 15 – 60 osob</p>
+                        <p> Program nabízíme jako celodenní městskou hru, jako součást firemního večírku a kratší verzi
+                            také
+                            jako doprovodný program vašeho konferenčního nebo školícího setkání. </p>
+                        <p> Doporučený počet účastníků: 15 – 60 osob </p>
                     </div>
                     <div class="buttons">
-                        <div onclick="displayText(3)" class="btn">Podrobnosti</div>
-                        <a class="btn" href="./commision.html">Objednat</a>
+                        <div onclick="displayText(4)" class="btn">Podrobnosti</div>
+                        <a class="btn" href="./contact.html">Objednat</a>
+                    </div>
+                </div>
+                <div class="section__list__course"
+                    style="background-image: url(./images/games/encryptor_ragensis.jpg);">
+                    <h3>Encryptor Pragensis</h3>
+                    <p>Šifrovací hra plná záhad, tajemství a kódů </p>
+                    <div id="course__text5" class="course__text--hidden course__text">
+                        <p>Ke každému zámku je klíč. Slova není těžké schovat, správný význam zakrýt a správná odpověď
+                            se
+                            často ukrývá až mezi řádky. Je překvapivé, jak lidi přitahují malé záhady a tajemství. Je
+                            lákavé
+                            vydat se do bludiště spletitých zašifrovaných textů, v pomíchaném klubku nití z vět nalézt
+                            ten
+                            správný konec, zatáhnout za něj a jediným kouzelnickým pohybem nalézt řešení. </p>
+                        <p>Encryptor Pragensis je šifrovací hra. Týmová aktivita založená na přirozené lidské touze
+                            vyřešit
+                            předloženou záhadu. Zároveň nabízí příležitost velice intenzivním způsobem otestovat
+                            schopnost
+                            týmu k hledání kreativních řešení, tedy nalézat na první pohled nezřetelné cesty. Úspěšné
+                            budou
+                            ty týmy, které zvládnou překonat ostych vyslovit nesmyslnou hypotézu, vyslovit myšlenku v
+                            okamžiku, kdy se objeví. Pouze vyloučením těchto slepých uliček lze totiž dojít na konec
+                            spletité cesty až k řešení zašifrovaného úkolu.
+                        </p>
+                        <p>Program nabízíme jako celodenní městskou hru, jako součást firemního večírku a kratší verzi
+                            také
+                            jako doprovodný program vašeho konferenčního nebo školícího setkání. </p>
+                        <p>Doporučený počet účastníků: 10 – 200 osob </p>
+                    </div>
+                    <div class="buttons">
+                        <div onclick="displayText(5)" class="btn">Podrobnosti</div>
+                        <a class="btn" href="./contact.html">Objednat</a>
+                    </div>
+                </div>
+                <div class="section__list__course" style="background-image: url(./images/games/casino.jpg);">
+                    <h3>Casino Las Vegas</h3>
+                    <p>Máte chuť si s přibývajícím večerem trochu zariskovat?</p>
+                    <div id="course__text6" class="course__text--hidden course__text">
+                        <p>Dámy a pánové vítejte v nově otevřeném kasinu. Kulička rulety skáče po číslech vašeho štěstí
+                            a
+                            srdcová královna se usmívá na nejodvážnější hráče. Vzduch je prosycen vášní, se kterou
+                            elegantní
+                            gentlemani přihazují bez mrknutí oka žetony ve výši průměrného měsíčního výdělku. Dámy
+                            nezůstávají pozadu a žetony posílají do hry snad ještě trošku víc bezhlavě. A když se žetony
+                            rozkutálí. Vždy je možné bankéři upsat další směnku. Tohle je kasino a bezstarostné
+                            riskování
+                            vydrží s vytrvalostí sobě vlastní až do hluboké noci. </p>
+                        <p>Casino Las Vegas je prověřený program, který umožňuje stát se na jeden večer vášnivým hráčem
+                            v
+                            elegantním kasinu. Zajímavým přesahem do doby po kurzu jsou směnky na služby, za které lze
+                            získat herní žetony. Na konci večer probíhá dražba a kromě toho, že se lze vykoupit, dá se
+                            získat i zajímavý úpis některého z kolegů.
+                        </p>
+                        <p>Program nabízíme jako firemní večírek a kratší verzi také jako doprovodný program vašeho
+                            konferenčního nebo školícího setkání. </p>
+                        <p>
+                            Doporučený počet účastníků: 15 – 40 osob</p>
+                    </div>
+                    <div class="buttons">
+                        <div onclick="displayText(6)" class="btn">Podrobnosti</div>
+                        <a class="btn" href="./contact.html">Objednat</a>
+                    </div>
+                </div>
+                <div class="section__list__course" style="background-image: url(./images/games/risk_zisk.jpg);">
+                    <h3>Risk je zisk</h3>
+                    <p>Soutěžní vědomostní klání týmů</p>
+                    <div id="course__text7" class="course__text--hidden course__text">
+                        <p>Jaké je hlavní město Angoly? Kolik dětí měl Karel IV.? Proč je moře slané? Kolik dětí má náš
+                            ředitel? Odkud je Tonda z účtárny? No prostě, budeme se ptát na ledacos a vy na cosi
+                            odpovíte.
+                            Hra, která vyžaduje znalosti, ale i správný odhad protihráčů a odvahu zariskovat. </p>
+                        <p> Risk je zisk vychází z populární televizní soutěže Riskuj. Podle domluvy lze naplnit boxy s
+                            otázkami různými tématy. Jak dotazy na obecné vědomosti, tak i spíše humorné otázky nebo
+                            otázky
+                            spojené s vašimi produkty a firmou.
+                        </p>
+                        <p> Program nabízíme jako firemní večírek a kratší verzi také jako doprovodný program vašeho
+                            konferenčního nebo školícího setkání. </p>
+                        <p>
+                            Doporučený počet účastníků: 15 – 40 osob </p>
+                    </div>
+                    <div class="buttons">
+                        <div onclick="displayText(7)" class="btn">Podrobnosti</div>
+                        <a class="btn" href="./contact.html">Objednat</a>
                     </div>
                 </div>
             </div>
+        </section>
+        <section>
+            <h2>Firemní den</h2>
+            <p>Firemní den vnímáme jako příjemné sdílení společného času. Má být šancí k zastavení v trošku nepřirozeném
+                sprintu našich životů, okamžikem sednout si a povídat nebo vychutnávat dobré jídlo. Možností potěšit se
+                neotřelým programem nebo příležitostí vyzkoušet něco nového. Záleží pak již jen na okolnostech, zda
+                takové okamžiky potřebujeme prožít pouze s kolegy, společně se svými rodinami nebo zda odměníme
+                zajímavými zážitky také naše obchodní partnery. Ať už máte svou vlastní představu a hledáte partnera pro
+                realizaci nebo hledáte inspiraci, jsme tady pro vás připraveni uspořádat neopakovatelný firemní den.
+            </p>
+            <p>Udělejte si představu, jak může váš firemní den vypadat, a přečtěte si něco víc o jednom z připravených
+                programů:
+            </p>
+            <div class="section__list">
+                <div class="section__list__course" style="background-image: url(./images/games/renesance.jpg);">
+                    <h3>Na křídlech renesance</h3>
+                    <p>Zábavní odpoledne pro zaměstnance i rodinné příslušníky </p>
+                    <div id="course__text8" class="course__text--hidden course__text">
+                        <p>Parku zalitému v podzimním slunci dominuje stan s občerstvením a vůně svařeného vína láká
+                            přímo
+                            magicky k tomuto místu všechny nově příchozí. Mě, moje kolegy a naše rodiny. Dnes odpoledne
+                            jsme
+                            pozváni na firemní piknik, na kterém se má bavit celá rodina. Alespoň to slibovala umělecky
+                            vyvedená pozvánka, kterou jsme netradičně neobdrželi emailem, ale přinesla nám ji múza.
+                            Krásná
+                            dívka v historickém kostýmu. Příjemná hudba nás vtahuje do atmosféry renesanční Itálie, kde
+                            se
+                            můžeme stát umělci snad ze všech myslitelných oborů. Popíjíme ono víno, nebo třeba teplý
+                            ovocný
+                            džus. Střídavě obdivujeme um šikovného kejklíře a rozhlížíme se kolem po možnostech, jež
+                            oživlý
+                            park dnes nabízí. Nedaleko jsou dobře vidět ruce kolegů i jejich dětí zabořené do sochařské
+                            hlíny. Od barvy umazaná malířka ukazuje, jak nejlépe zachytit na plátno krásu okolní
+                            přírody.
+                            Hudebníci do svého orchestru zapojí každého, kdo se odváží. Kejklíř už skončil své
+                            vystoupení a
+                            nyní ukazuje několika klukům, jak lehce žonglovat s barevnými míčky. Začíná mi být jasné, že
+                            na
+                            konci dnešního dne budu určitě rozveselen svařeným vínem … a ještě o něco víc zážitky se
+                            svou
+                            rodinou. </p>
+                        <p> Program je vhodný pro firemní den.
+                        </p>
+                        <p> Doporučený počet účastníků: 30 – 200 osob </p>
+                    </div>
+                    <div class="buttons">
+                        <div onclick="displayText(8)" class="btn">Podrobnosti</div>
+                        <a class="btn" href="./contact.html">Objednat</a>
+                    </div>
+                </div>
+                <div class="section__list__course" style="background-image: url(./images/games/hry_bez_hranic.jpg);">
+                    <h3>Hry bez hranic</h3>
+                    <p>Soutěžní klání v netradičních disciplínách </p>
+                    <div id="course__text9" class="course__text--hidden course__text">
+                        <p>230 dní v roce sedíte na kancelářských židlích a už vám to přijde hodně? Rozpohybujte spolu s
+                            námi svá těla v rámci sportovního dne plného netradičních více či méně pohybových aktivit.
+                        </p>
+                        <p> Zahrajte si kopanou, střílejte z luku, odpalujte míčky, cvrnkejte kuličky nebo se projeďte
+                            na
+                            dračích lodích. Vzali jste s sebou i svou partnerku? Zajisté se nebude nudit na lekci jógy
+                            či
+                            zumby nebo si ráda vyzkouší, jak se drží golfová hůl. A co vaše děti? I pro ně máme
+                            připraveny
+                            zábavné sportovní soutěže – hodem míčkem na cíl počínaje a oblíbeným skákáním přes gumu
+                            konče.
+                            Máte pocit, že už máte na sport příliš opotřebované údy? A zkoušeli jste si zahrát pétanque
+                            nebo
+                            minigolf? Myslíte si, že už jste všechny sporty vyzkoušeli? Pak vám nabídneme skákací
+                            superboty
+                            – powerskipy či sumo zápasy v nafukovacích oblečcích a mnoho dalších aktivit.
+                        </p>
+                        <p> Program je vhodný pro firemní den. </p>
+                        <p>Doporučený počet účastníků 30 – 200 osob. </p>
+                    </div>
+                    <div class="buttons">
+                        <div onclick="displayText(9)" class="btn">Podrobnosti</div>
+                        <a class="btn" href="./contact.html">Objednat</a>
+                    </div>
+                </div>
+                <div class="section__list__course" style="background-image: url(./images/games/alchemy.jpg);">
+                    <h3>Alchymistovo tajemství</h3>
+                    <p>Nahlédněte škvírkou do dveří alchymistické laboratoře </p>
+                    <div id="course__text10" class="course__text--hidden course__text">
+                        <p>Vezměte svou rodinu na výlet do světa, ve kterém je hranice mezi magií a alchymií nesmírně
+                            tenká.
+                            Nejprve absolvujete několik drobných úkolů, díky kterým získáte přísady, které pak pod
+                            vedením
+                            zkušené ruky jednoho z alchymistů v tmavých kápích použijete na alchymistický pokus.
+                            Alchymistické pokusy jsou reprezentovány reálnými chemickými reakcemi, ovšem zcela
+                            bezpečnými,
+                            realizovatelnými jen za pomoci ingrediencí dostupných běžně v domácnosti. </p>
+                        <p> Zajímá vás, jak z cukru vytvoříte obří černé chapadlo? Co musíte přidat do vody s octem a
+                            jedlou
+                            sodou, aby vám ruce pokryla hustá pěna? Jak způsobit, aby kečup získal kanárkově žlutou
+                            barvu?
+                            Zda stačí zahrát rytmickou skladbu, aby rozinky začaly samy vyskakovat z misky?
+                        </p>
+                        <p> Program si díky pestrosti a velkému množství stanovišť užijí jak dospělí, tak i jejich děti
+                            a
+                            rodinní příslušníci. Program je vhodný pro firemní den. </p>
+                        <p> Doporučený počet účastníků: 30 – 200 osob </p>
+                    </div>
+                    <div class="buttons">
+                        <div onclick="displayText(10)" class="btn">Podrobnosti</div>
+                        <a class="btn" href="./contact.html">Objednat</a>
+                    </div>
+                </div>
+                <div class="section__list__course" style="background-image: url(./images/games/muz_bez_stinu.jpg);">
+                    <h3>Muž bez stínu</h3>
+                    <p>Špiónská detektivní hra </p>
+                    <div id="course__text11" class="course__text--hidden course__text">
+                        <p>Neznáte mě. Můžete mě zahlédnout, ale vzpomínka bude tak nejasná, že se vytratí z vaší mysli
+                            s
+                            prvním závanem větru. Chodím nocí a dělám práci, kterou nikdo jiný dělat nemůže. Zabíjím,
+                            aby
+                            jiní mohli žít. Riskuji, abyste mohli spát v klidu a blažené nevědomosti. Jsem ten na té
+                            správné
+                            straně. Pokud nějaká taková existuje. Mám svoje úkoly. Svojí hrdost. Nemůžu přestat. Jak
+                            jednou
+                            začnete, tak už to prostě nejde. Prý jsem muž bez stínu. Muž bez jména, nebo vlastně s
+                            desítkou
+                            různých jmen. Ženám se představuji jako James. </p>
+                        <p> Muž bez stínu je komplexní špionská hra, ve které se týmy agentů pohybují po jednotlivých
+                            úkolech, získávají indicie směřující až k rozklíčování struktury tajné organizace, jež se
+                            chystá
+                            ovládnout svět. Podaří se odhalit tajné sídlo, proniknout do něj a zachránit svět?
+                        </p>
+                        <p> Program nabízíme jako celodenní městskou hru a kratší verzi také jako doprovodný program
+                            vašeho
+                            konferenčního nebo školícího setkání. </p>
+                        <P> Doporučený počet účastníků: 15 – 60 osob </P>
+                    </div>
+                    <div class="buttons">
+                        <div onclick="displayText(11)" class="btn">Podrobnosti</div>
+                        <a class="btn" href="./contact.html">Objednat</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__stopy">
+            <h2>Stopy a stíny</h2>
+            <p>Vždy jednou za rok se v nejmenovaném království koná dobrodružný závod. Jezdci na koních mají za úkol ve
+                stanoveném čase nasbírat co nejvíce bodů za projetí co největšího počtu vesnic, měst a hradů.Vaším
+                úkolem tedy bude projet na herním plánu co největším počtem vesnic, měst a hradů a získat za to co
+                nejvíce bodů. Pozor ale, aby vám nedošlo žrádlo pro vašeho koně, to byste nikam nedojeli. A také si
+                musíte ohlídat, aby vám obyvatelé království, kterým není závod příliš po chuti, nepostavili do cesty
+                nepříjemnou překážku či po vás nehodili shnilé rajče. Takovým místům je lepší se vyhnout, a to se vám
+                podaří jen, pokud správně odhalíte významy piktogramů na mapě království. </p>
+            <a href="./stepsandshadows.html" class="btn btn--blue">Dozvědět se více</a>
+
         </section>
     </main>
     <footer class="footer">
@@ -207,10 +483,40 @@
         </figure>
     </footer>
     <script>
-        let displayText = function (position) {
-            document.getElementById("course__text" + position).classList.toggle("course__text--hidden");
+        function displayText(i) {
+            //Page width
+            const width = 589
+            if (window.innerWidth > width) {
+                const text = document.querySelector(`#course__text${i}`).innerText
+                console.log(text)
+                let element = `<div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <span id="close" class="close">&times;</span>
+                                  <p>${text}</p>
+                                </div>
+
+                            </div>`
+                document.querySelector("body").innerHTML += element
+                document.querySelector("#close").addEventListener("click", () => {
+                    const element = document.querySelector("#myModal")
+                    element.removeEventListener("click", (event) => {
+                        myClass.myEventMethod(event);
+                    }, false)
+                    element.remove()
+                })
+                return
+            }
+            document.getElementById("course__text" + i).classList.toggle("course__text--hidden");
+        }
+    </script>
+    <script>
+        let menuOnOff = function () {
+            document.getElementById("header__top_part__nav").classList.toggle("header__nav--hidden");
         }
     </script>
 </body>
+
 
 </html>

@@ -94,18 +94,54 @@ header .btn--blue {
 .header__top_part {
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+
+.header__top_part__hamburger_menu {
+    margin-top: 28px;
+    flex-shrink: 0;
+
 }
 
 .header__top_part__figure {
-    margin: 15px 20px;
+    margin: 15px 0;
     width: 260px;
     flex-shrink: 0;
 }
 
 .header__top_part__nav {
-    display: none;
-    max-width: 600px;
+    position: absolute;
+    top: 74px;
+    left: -10px;
     margin-right: 0;
+}
+
+.header__top_part__nav {
+    display: block;
+    line-height: 50.25px;
+    width: 100vw;
+    background-color: #0098db;
+}
+
+.header__top_part__nav__ul {
+    padding: 0;
+}
+
+.header__top_part__nav__ul li {
+    display: block;
+    border-bottom: #0075a7 2px solid;
+}
+
+.header__top_part__nav__ul li a {
+    text-align: center;
+    margin: auto;
+}
+
+.header__nav--hidden {
+    display: none;
+}
+.header__top_part__hamburger_menu {
+    cursor: pointer;
 }
 
 h1 {
@@ -113,6 +149,7 @@ h1 {
     font-size: 30px;
     color: white;
     padding-top: 20px;
+    margin: 0;
     margin-bottom: 20px;
     max-width: 800px;
 }
@@ -216,6 +253,11 @@ h1 {
         margin: auto 50px;
     }
 
+    .header__top_part__nav {
+
+        left: -50px;
+
+    }
 
     h1 {
         font-size: 40px;
@@ -248,20 +290,24 @@ h1 {
         margin: auto 100px;
     }
 
-    .header__top_part__nav {
-        display: block;
-        line-height: 50.25px;
-        width: 100%;
+    .header__top_part__hamburger_menu {
+        display: none;
     }
-
+    .header__top_part__nav {
+        position: initial;
+        background-color: transparent;
+        max-width: 600px;
+    }
     .header__top_part__nav__ul {
         display: flex;
         justify-content: space-between;
         padding: 0;
         margin: 13px auto
     }
-
     .header__top_part__nav__ul li {
+        border: none;
+    }
+    .header__nav--hidden {
         display: block;
     }
 

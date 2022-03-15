@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Diamantina training firemní akce teambulding trénink týmové akce">
+    <meta name="description"
+        content="Pořádáme firemní akce na míru, od modulového vzdělávání a tréninků, přes programy zaměřené na rozvoj týmů až po zábavné programy v podobě doprovodných akcí, ...">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-43580300-2', 'auto');
+        ga('send', 'pageview');
+    </script>
     <title>Kontaktní formulář</title>
 </head>
 
@@ -16,13 +41,17 @@
             <a href="./index.html">
                 <figure class="header__top_part__figure"><img src="./images/logo.png" alt="Diamantina logo"></figure>
             </a>
-            <nav class="header__top_part__nav">
+            <div class="header__top_part__hamburger_menu" onclick="menuOnOff()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="18" viewBox="0 0 27 18">
+                    <path id="Icon_material-menu" fill="black" data-name="Icon material-menu" d="M4.5,27h27V24H4.5Zm0-7.5h27v-3H4.5ZM4.5,9v3h27V9Z" transform="translate(-4.5 -9)"></path>
+                </svg></div>
+            <nav class="header__top_part__nav header__nav--hidden" id="header__top_part__nav">
                 <ul class="header__top_part__nav__ul">
                     <li><a href="#course_offer">Nabídka kurzů</a></li>
                     <li><a href="./team.html">O nás</a></li>
                     <li><a href="./news.html">Novinky</a></li>
                     <li><a href="./contact.html">Kontakt</a></li>
-                    <li><a href="./contact.html" class="btn--blue">Nezávazně poptat</a></li>
+                    <li><a href="./contact.html" class="btn btn--blue">Nezávazně poptat</a></li>
                 </ul>
             </nav>
         </div>
@@ -100,6 +129,11 @@
             <img src="./images/logo_edit.png" alt="Diamantina logo">
         </figure>
     </footer>
+    <script>
+        let menuOnOff = function () {
+            document.getElementById("header__top_part__nav").classList.toggle("header__nav--hidden");
+        }
+    </script>
 </body>
 
 </html>
